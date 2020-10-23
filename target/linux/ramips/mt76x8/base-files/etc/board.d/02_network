@@ -37,6 +37,7 @@ ramips_setup_interfaces()
 	asus,rt-n12-vp-b1|\
 	hiwifi,hc5661a|\
 	mediatek,mt7628an-eval-board|\
+        mediatek,br-323|\
 	mercury,mac1200r-v2|\
 	totolink,lr1200|\
 	wavlink,wl-wn570ha1|\
@@ -71,6 +72,9 @@ ramips_setup_interfaces()
 	tplink,tl-mr3420-v5|\
 	tplink,tl-wr840n-v4|\
 	tplink,tl-wr840n-v5|\
+	tplink,tl-wr840n-v6|\
+	tplink,tl-wr840n-v6.1|\
+	tplink,tl-wr840n-v6.2|\
 	tplink,tl-wr841n-v13|\
 	tplink,tl-wr841n-v14|\
 	tplink,tl-wr842n-v5|\
@@ -203,6 +207,9 @@ ramips_setup_macs()
 	tplink,tl-mr3420-v5|\
 	tplink,tl-wr840n-v4|\
 	tplink,tl-wr840n-v5|\
+	tplink,tl-wr840n-v6|\
+	tplink,tl-wr840n-v6.1|\
+	tplink,tl-wr840n-v6.2|\
 	tplink,tl-wr841n-v13|\
 	tplink,tl-wr841n-v14|\
 	tplink,tl-wr842n-v5|\

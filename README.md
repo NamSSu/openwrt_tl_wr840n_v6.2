@@ -82,6 +82,10 @@ For a list of supported devices see the [OpenWrt Hardware Database](https://open
 * [Dev Mailing List](https://lists.openwrt.org/mailman/listinfo/openwrt-devel): Send patches
 * [Dev Chat](https://webchat.freenode.net/#openwrt-devel): Channel `#openwrt-devel` on freenode.net.
 
+### Version Info
+
+This Version is modified to latest(2020.10.23)git version openwrt. 4/32 rules have enable .config so include by luci, iptables, dhcpd
+
 ## License
 
 OpenWrt is licensed under GPL-2.0

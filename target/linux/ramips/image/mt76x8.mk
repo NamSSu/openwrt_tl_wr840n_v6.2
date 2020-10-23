@@ -527,6 +527,63 @@ define Device/tplink_tl-wr840n-v5
 endef
 TARGET_DEVICES += tplink_tl-wr840n-v5
 
+define Device/tplink_tl-wr840n-v6
+  $(Device/tplink-v2)
+  SOC := mt7628an
+  IMAGE_SIZE := 3968k
+  DEVICE_VENDOR := TP-Link
+  DEVICE_MODEL := TL-WR840N
+  DEVICE_VARIANT := v6
+  TPLINK_FLASHLAYOUT := 4Mmtk
+  TPLINK_HWID := 0x08400006
+  TPLINK_HWREV := 0x1
+  TPLINK_HWREVADD := 0x6
+  TPLINK_HVERSION := 3
+  IMAGES := sysupgrade.bin tftp-recovery.bin
+  DEFAULT := n
+  SUPPORTED_DEVICES += tl-wr840n-v6
+  IMAGE/tftp-recovery.bin := pad-extra 64k | $$(IMAGE/factory.bin)
+endef
+TARGET_DEVICES += tplink_tl-wr840n-v6
+
+define Device/tplink_tl-wr840n-v6.1
+  $(Device/tplink-v2)
+  SOC := mt7628an
+  IMAGE_SIZE := 3968k
+  DEVICE_VENDOR := TP-Link
+  DEVICE_MODEL := TL-WR840N
+  DEVICE_VARIANT := v6.1
+  TPLINK_FLASHLAYOUT := 4Mmtk
+  TPLINK_HWID := 0x08400006
+  TPLINK_HWREV := 0x1
+  TPLINK_HWREVADD := 0x6
+  TPLINK_HVERSION := 3
+  SUPPORTED_DEVICES += tl-wr840n-v6.1
+  DEFAULT := n
+  IMAGE/tftp-recovery.bin := pad-extra 64k | $$(IMAGE/factory.bin)
+  IMAGES := sysupgrade.bin tftp-recovery.bin
+endef
+TARGET_DEVICES += tplink_tl-wr840n-v6.1
+
+define Device/tplink_tl-wr840n-v6.2
+  $(Device/tplink-v2)
+  SOC := mt7628an
+  IMAGE_SIZE := 3968k
+  DEVICE_VENDOR := TP-Link
+  DEVICE_MODEL := TL-WR840N
+  DEVICE_VARIANT := v6.2
+  TPLINK_FLASHLAYOUT := 4Mmtk
+  TPLINK_HWID := 0x08400006
+  TPLINK_HWREV := 0x1
+  TPLINK_HWREVADD := 0x7
+  TPLINK_HVERSION := 3
+  SUPPORTED_DEVICES += tl-wr840n-v6.2
+  DEFAULT := n
+  IMAGES := sysupgrade.bin tftp-recovery.bin
+  IMAGE/tftp-recovery.bin := pad-extra 64k | $$(IMAGE/factory.bin)
+endef
+TARGET_DEVICES += tplink_tl-wr840n-v6.2
+
 define Device/tplink_tl-wr841n-v13
   $(Device/tplink-v2)
   IMAGE_SIZE := 7808k
@@ -555,6 +612,17 @@ define Device/tplink_tl-wr841n-v14
   DEFAULT := n
 endef
 TARGET_DEVICES += tplink_tl-wr841n-v14
+
+define Device/mediatek_br-323
+  SOC := mt7628an
+  BLOCKSIZE := 64k
+  IMAGE_SIZE := 7872k
+  DEVICE_VENDOR := MediaTek
+  DEVICE_MODEL := BR-323
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
+  SUPPORTED_DEVICES += mediatek_br-323
+endef
+TARGET_DEVICES += mediatek_br-323
 
 define Device/tplink_tl-wr842n-v5
   $(Device/tplink-v2)
